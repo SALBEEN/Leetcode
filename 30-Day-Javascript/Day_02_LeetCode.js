@@ -30,3 +30,16 @@ if (passwordPattern.test(password)) {
 if (password !== confirmPassword) {
   console.log("Password doesnot match");
 }
+
+//validate age
+
+const validateAge = /^[0-9]+$/;
+if (validateAge.test(age)) {
+  if (age > 16 && age < 61) {
+    console.log("Age is perfect as required");
+  } else {
+    console.log("age should be between 16 and 60");
+  }
+} else {
+  console.log("age should be a number");
+}
